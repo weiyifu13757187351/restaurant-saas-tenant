@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="roles-v2.css" />
   <link rel="stylesheet" href="level-attributes.css" />
   <link rel="stylesheet" href="merchant-credit.css" />
+  <link rel="stylesheet" href="dishes.css" />
 </head>
 <body>
   <section id="loginView" class="login-view">
@@ -48,7 +49,7 @@
       <nav id="nav">
         <p>工作台</p><button class="active" data-page="dashboard"><span>▦</span>经营总览</button>
         <p>组织经营</p><button data-page="merchants"><span>▤</span>商户管理<em>128</em></button><button data-page="suppliers"><span>♧</span>供应商管理</button><button data-page="formats"><span>◈</span>业态管理</button>
-        <p>商品供应链</p><button data-page="dishes"><span>◉</span>菜品中心</button><button data-page="ingredients"><span>◒</span>食材中心</button><button data-page="purchase"><span>⇄</span>采购管理<em class="warn">6</em></button>
+        <p>菜品中心</p><button data-page="dishes"><span>◉</span>我的菜品库</button><button data-page="standardDishes"><span>◎</span>标准菜品库</button><button data-page="dishCategories"><span>▦</span>分类管理</button><button data-page="dishAuthorization"><span>⊞</span>菜品授权</button><p>商品供应链</p><button data-page="ingredients"><span>◒</span>食材中心</button><button data-page="purchase"><span>⇄</span>采购管理<em class="warn">6</em></button>
         <p>系统管控</p><button data-page="permissions"><span>⊞</span>角色与权限</button>
       </nav>
       <div class="sidebar-help"><span>?</span><div><b>需要帮助？</b><small>查看使用指南</small></div><span>›</span></div>
@@ -67,5 +68,6 @@
   <div id="assignRoleModal" class="modal hidden"><div class="modal-card assign-card"><div class="modal-head"><div><h3>分配商户角色</h3><p>选择商户并赋予已创建的角色</p></div><button class="assign-close">×</button></div><form id="assignRoleForm" class="single-form"><label>选择商户<select required><option>杭州市校园餐饮管理中心</option><option>西湖区学校后勤服务中心</option><option>南京未来教育服务中心</option></select></label><label>选择角色<select required><option>商户管理员</option><option>校区管理员</option><option>采购专员</option><option>数据查看员</option></select></label><div class="assignment-preview"><b>权限预览</b><span>功能权限：组织、成员、菜品、采购</span><span>数据权限：姓名完整可见，手机号脱敏，证件号隐藏</span></div><div class="form-actions"><button type="button" class="ghost assign-close">取消</button><button class="primary">确认分配</button></div></form></div></div>
   <div id="toast" class="toast">操作成功</div>
   <script src="app.js"></script>
+  <script src="dishes.js"></script>
 </body>
 </html>
